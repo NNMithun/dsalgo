@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LargestInteger {
     public static void main(String[] args) {
-        int [] a={1,2,3,4,5,6};
+        int[] a = {1, 2, 3, 4, 5, 6};
         System.out.println(largest_method1(a));
         System.out.println(largest_method2(a));
 
@@ -19,10 +19,16 @@ public class LargestInteger {
         }
         return max;
     }
+
+    //using streams
     public static int largest_method2(int[] array) {
-        return (Integer) Arrays
+
+
+        return Arrays
                 .stream(array)
                 .max()
                 .getAsInt();
+
     }
+
 }
