@@ -6,7 +6,7 @@ public class StringMethods {
         //Returns: a string whose value is this string, with all leading and trailing white space removed
         s.strip();
         s.substring(0,5);
-        System.out.println(s.contains("nu"));;
+        //System.out.println(s.contains("nu"));;
 
         //can bit manupulation cannot be applied on Strings
 
@@ -31,7 +31,12 @@ public class StringMethods {
             count++;
 
         }
-        System.out.println(count);
+        //System.out.println(count);
+        String m2="mithuni";
+        System.out.println(m2.substring(0, m2.lastIndexOf('i')));
+
+        System.out.println(new StringBuilder(s.substring(0,s.lastIndexOf('i'))).reverse().append(s.substring(s.lastIndexOf("i",s.length()))));;
+        //System.out.println(m2.replaceAll("i",""));
 
 
     }
