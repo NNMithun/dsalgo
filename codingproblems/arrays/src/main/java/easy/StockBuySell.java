@@ -36,7 +36,10 @@ public class StockBuySell {
     }
 
     /*
-    To solve this problem, we can use a simple approach that involves iterating through the array and looking for opportunities to buy low and sell high. The key insight is that the maximum profit can be obtained by summing up all the increases in the stock prices over the period, which effectively means buying the stock at each local minimum and selling it at each subsequent local maximum.
+    To solve this problem, we can use a simple approach that involves iterating through the array and looking for
+    opportunities to buy low and sell high. The key insight is that the maximum profit can be obtained by
+    summing up all the increases in the stock prices over the period, which effectively means buying
+    the stock at each local minimum and selling it at each subsequent local maximum.
       Here's a Java program to implement this solution:
     * */
     public static int stockBuyAndSell_chatgpt(int n, int[] prices) {
