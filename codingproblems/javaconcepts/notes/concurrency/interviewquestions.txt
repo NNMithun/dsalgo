@@ -1,0 +1,21 @@
+https://www.baeldung.com/java-concurrency-interview-questions
+========================================================================================================================
+Q1. What Is the Difference Between a Process and a Thread?
+Both processes and threads are units of concurrency, but they have a fundamental difference: processes do not share a
+common memory, while threads do.
+
+From the operating system’s point of view, a process is an independent piece of software that runs in its own
+virtual memory space. Any multitasking operating system (which means almost any modern operating system) has
+to separate processes in memory so that one failing process wouldn’t drag all other processes down by
+scrambling common memory.The processes are thus usually isolated, and they cooperate by the means of inter-process
+communication which is defined by the operating system as a kind of intermediate API.
+On the contrary, a thread is a part of an application that shares a common memory with other threads of the same
+application. Using common memory allows to shave off lots of overhead, design the threads to cooperate and exchange data
+between them much faster.
+========================================================================================================================
+Q2. How Can You Create a Thread Instance and Run It?
+To create an instance of a thread, you have two options. First, pass a Runnable instance to its constructor and call start().
+Runnable is a functional interface, so it can be passed as a lambda expression:
+Thread thread1 = new Thread(() ->
+  System.out.println("Hello World from Runnable!"));
+thread1.start();

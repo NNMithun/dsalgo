@@ -27,7 +27,7 @@ public class FindSmallestLetterGreaterThanTarget {
         //compare the mid char is greater than target
         //compare the mid char is lesser than target
 
-
+return  'c';
 
 
     }
