@@ -52,6 +52,7 @@ public class RemoveElement {
 
         return nums.length - count1;
     }
+    //revised
     public static int removeElement1(int[] nums, int val) {
         int k = 0; // Pointer for keeping track of the position for non-val elements
 

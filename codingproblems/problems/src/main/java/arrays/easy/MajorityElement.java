@@ -1,5 +1,5 @@
 package arrays.easy;
-//kadane's algorithm
+//Boyer-Moore’s algorithm
 public class MajorityElement {
     public static void main(String[] args) {
 

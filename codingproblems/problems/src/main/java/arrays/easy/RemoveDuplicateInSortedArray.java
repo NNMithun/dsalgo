@@ -7,7 +7,8 @@ public class RemoveDuplicateInSortedArray {
         int[] arr = { 1,1,2};
         int[] arr1 = { 1,1,2};
         int val = 3;
-        removeDuplicates(arr);
+
+        removeDuplicates1(arr);
 
     }
     public static int removeDuplicates(int[] nums) {
@@ -23,4 +24,22 @@ public class RemoveDuplicateInSortedArray {
         return k;
 
     }
+    public static int removeDuplicates1(int[] nums) {
+        int i = 1;
+        int j = 0;
+        while (i < nums.length) {
+            if (nums[j] == nums[i]) {
+                i++;
+            } else {
+                j++;
+                nums[j] = nums[i];
+                i++;
+
+            }
+
+        }
+        return j++;
+    }
+
+
 }
